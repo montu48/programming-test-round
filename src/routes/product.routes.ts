@@ -24,7 +24,6 @@ router.delete("/:id", authenticate, authorizeAdmin, deleteProductHandler);
 router.put("/stock", authenticate, authorizeAdmin, updateStockHandler);
 router.get("/low-stock", authenticate, authorizeAdmin, getLowStockHandler);
 
-router.get("/reports", authenticate, authorizeAdmin, getReportsHandler);
 
 
 export default router;
